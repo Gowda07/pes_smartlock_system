@@ -1,1 +1,98 @@
-# pes_smartlocksystem
+# PES_smartlocksystem
+
+### What is smartlocksystem?
+
+Certainly! A smart lock system is an advanced security solution that allows users to lock and unlock doors using wireless technology, typically through a smartphone app, key fob, or keypad. These systems offer convenience, flexibility, and enhanced security features compared to traditional mechanical locks. Smart locks can be integrated into smart home ecosystems, enabling users to control access remotely, monitor lock status, and grant temporary or recurring access to others. They often use technologies like Bluetooth, Wi-Fi, or Zigbee to communicate with smartphones and other smart devices. If you have specific questions about smart locks or need assistance with a particular aspect, feel free to ask!
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/4cc87ce1-57f0-444f-a6a3-57e9ff8b5a22)
+
+
+
+### Working of smartlocksystem
+
+Smart lock systems work by integrating electronic and mechanical components to provide secure and convenient access control. Here's how they typically work:
+
+1. *Authentication:* Users can authenticate themselves through various methods such as smartphone apps, key fobs, PIN codes, biometric scans, or even voice recognition.
+
+2. *Communication:* Smart locks use wireless technologies like Bluetooth, Wi-Fi, or Zigbee to communicate with authorized devices such as smartphones or smart home hubs. 
+
+3. *Authorization:* When an authorized user attempts to unlock the door (either through a physical action like turning a handle or an electronic signal), the smart lock verifies the authentication credentials. If the credentials are valid, the lock grants access.
+
+4. *Remote Control:* Many smart locks offer remote control capabilities through mobile apps. This means users can lock or unlock doors from anywhere with an internet connection. 
+
+5. *Access Management:* Smart locks often allow users to manage access for others. This could include creating temporary codes or granting access for specific time periods. Some systems also offer activity logs, allowing homeowners to see who has accessed the property and when.
+
+6. *Integration:* Smart locks can integrate with other smart home devices and platforms. For example, they can work alongside security cameras, doorbell cameras, and home automation systems. Integration with voice assistants like Amazon Alexa or Google Assistant allows users to control the lock using voice commands.
+
+Overall, smart lock systems provide a higher level of security, as they can offer encryption and additional authentication layers beyond traditional mechanical locks. Additionally, they offer the convenience of keyless entry, making it easier to manage access to your home or property.
+
+
+
+## Installation
+
+For installation and more details regarding iverilog, yosys and gtkwave, refer to :
+
+https://github.com/Gowda07/pes_asic_class
+
+
+## Simulation
+
++ `iverilog pes_smartlocksystem.v pes_smartlocksystem_tb.v
++ `./a.out`
++ `gtkwave pes_smartlocksystem_tb.vcd`
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/ffef7957-9b17-4228-a411-acfcdeb8d206)
+
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/f372ecaa-8392-4357-b3e6-83eca499c344)
+
+
+## Synthesis
++ Invoke `yosys`
++ `read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
++ `read_verilog pes_smartlocksystem.v pes_smartlocksystem.v`
++ `synth -top pes_smartlocksystem`
++ `dfflibmap -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib `
++ `abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
++ `flatten`
++ `write_verilog pes_smartlocksystem_netlist.v`
++ `show pes_smartlocksystem
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/9903e5dc-643d-4a03-9157-bfeb672235d2)
+
+
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/aa96bcda-e582-4a1c-9844-d03febde8bfb)
+
+
+
+
+## Gate-Level Simulation
+
++ `iverilog my_lib/verilog_model/primitives.v my_lib/verilog_model/sky130_fd_sc_hd.v pes_smartlocksystem_netlist.v pes_smartlocksystem_TB.v`
++ `./a.out`
++ `gtkwave pes_smartlocksystem.vcd`
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/eb819e90-0874-47fd-830d-246f663faa97)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/05a30a03-4e19-4a4a-b315-4ef2dff181db)
+
+
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/b195f9fe-f2c8-41fb-b5f0-f098f6bbcb43)
+
+
+
+
+
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/cc4922d5-d6d9-4014-9e4a-61f0b676549e)
+
+  
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/4b49df74-6e80-4c63-a10c-d08ccd49f5cb)
+
+ 
+![Screenshot from 2023-10-18 17-09-35](https://github.com/Vinodkumar8318/PES_Ripple-CA/assets/142583979/6e27ee1b-5b05-440a-88b8-9565190c18ee)
+
+
+We can observe that output of functional simulation is matching with the output of gate level simulation, this means that the netlist generated by yosys is correct.
