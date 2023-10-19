@@ -58,6 +58,12 @@ https://github.com/Gowda07/pes_asic_class
 + `write_verilog pes_smartlocksystem_netlist.v`
 + `show pes_smartlocksystem
 
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/12371cb8-3f57-4887-89eb-77ca011a32d3)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/c9e0c53a-5f1a-4622-9018-889d039f77ab)
+
+
+
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/9903e5dc-643d-4a03-9157-bfeb672235d2)
 
 
@@ -71,19 +77,11 @@ https://github.com/Gowda07/pes_asic_class
 
 + `iverilog my_lib/verilog_model/primitives.v my_lib/verilog_model/sky130_fd_sc_hd.v pes_smartlocksystem_netlist.v pes_smartlocksystem_TB.v`
 + `./a.out`
-+ `gtkwave pes_smartlocksystem.vcd`
-
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/eb819e90-0874-47fd-830d-246f663faa97)
-
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/05a30a03-4e19-4a4a-b315-4ef2dff181db)
++ `gtkwave pes_smartlocksystem.vcd
 
 
 
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/b195f9fe-f2c8-41fb-b5f0-f098f6bbcb43)
-
-
-
-
 
 
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/cc4922d5-d6d9-4014-9e4a-61f0b676549e)
