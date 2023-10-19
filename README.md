@@ -58,8 +58,11 @@ https://github.com/Gowda07/pes_asic_class
 + `write_verilog pes_smartlocksystem_netlist.v`
 + `show pes_smartlocksystem
 
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/44701f4d-5a86-4720-a52c-e9c7ea3ab27f)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/d22d48d5-1f5b-4f0e-9ed7-0638ec65b77a)
 
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/9acb6c9c-6a8f-4201-94de-5ebb637b6999)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/946fc823-bb98-4995-a3e3-bd4b6477da4c)
 
 
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/12371cb8-3f57-4887-89eb-77ca011a32d3)
