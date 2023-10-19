@@ -84,7 +84,7 @@ https://github.com/Gowda07/pes_asic_class
 + `gtkwave pes_smartlocksystem.vcd
 
 
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/cc4922d5-d6d9-4014-9e4a-61f0b676549e)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/df04ce1d-f40b-46b3-89c1-dc442aad4cd8)
 
   
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/4b49df74-6e80-4c63-a10c-d08ccd49f5cb)
