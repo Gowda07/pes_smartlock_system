@@ -166,7 +166,7 @@ run_synthesis
 ```
 run_floorplan
 
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/6d5dae4f-93e2-4509-b99b-beb16e227cbf)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/539c7666-8523-44a2-9913-e81b9a652838)
 
 
 **Note we need to use libs.tech file so we need to gitclone this https://github.com/hwiiiii/sky130A into pdks folder**
@@ -179,7 +179,7 @@ magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef 
 ```
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/df302c32-6ff8-4aba-b417-32debcc10d12)
 
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/60b700f2-1902-422a-b99d-eb8d4c793847)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/fc50a218-f9bc-4a5b-a776-bce135ef6a2b)
 
 
 
@@ -193,7 +193,7 @@ magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef 
 ```
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/c3ce9d0a-d171-4171-af54-d53fedd71482)
 
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/ce601d07-4193-48e0-a2f5-5e21e998ea8e)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/7b8d3246-98fa-4578-aec5-6e341658de1f)
 
 
 **CTS**
@@ -201,43 +201,32 @@ magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef 
 ```
 run_cts
 ```
-![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/eebd43d3-41c4-4acb-8833-d7e69e050d08)
-
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/afbf7335-8290-4d74-93a6-5adfb1847a3d)
 
 **Routing**
 + Command to exectue
 ```
 run_routing
 ```
-![run_routing](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/8dfe329e-c02a-449b-8d5d-fbcc1266925e)
-
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/6c479016-40ff-490f-917d-68bb83392380)
 
 
 ```
 magic -T /home/nithin/Downloads/sky130A/sky130A. tech lef read ../../tmp/merged.nom.lef def pes_smartlocksystem.def &
 ```
-![Screenshot from 2023-11-04 17-50-06](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/b83e6c10-1194-43f3-80f4-6a1bb7ce38d9)
-
 
 
 **These reports generated are given below , after executing run_routing command**
 
-![Screenshot from 2023-11-04 17-36-16](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/8764bb5e-0fed-4748-9691-552ca56e8786)
-![Screenshot from 2023-11-04 17-36-07](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/b7df8855-d773-470e-9ee0-28706a87300b)
-![Screenshot from 2023-11-04 17-35-52](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/c554c34e-57b1-42b1-ac25-c2d55be21c19)
-![Screenshot from 2023-11-04 17-35-44](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/4c1eed3f-ddbe-4aca-8fa7-ba9254a7cf5c)
-![Screenshot from 2023-11-04 17-35-38](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/0d11fea0-3b72-438b-a118-8bc302bdbafa)
-![Screenshot from 2023-11-04 17-35-14](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/20a3e154-baa5-4a9f-b85a-5da24f55d41f)
-![power_report_new](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/25857549-4c41-4076-bbfd-8b8ae40f4a02)
-![area_report_new](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/8fe1db38-ae1b-4652-b6f0-16c5912c502d)
-![summary_report_new](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/ca2926cf-a897-4d59-91b5-d93b6d1d75b9)
-![skew_report_new](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/2658b53b-027d-4a78-9a95-7a90a39e13a4)
-
-
-
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/684eff68-1914-4549-ad6b-6e109eb6ca7c)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/9f4dac4d-a93c-4366-8c46-60dbd0653de6)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/68b470fc-27fc-4ce4-b042-e1f5936b5162)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/f4c78945-bf2a-40cc-a40a-660a8cdd2e3b)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/5db47d5c-97e6-44f5-ac3c-82d4075e75bb)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/511ab2cd-2718-4166-bd8e-8c5bef51df96)
 
 #### Statistics
-- Area = 1230 um2
+- Area = 926.0
 - Internal Power = 2.81e-04 W
 - Switching Power = 1.81e-04 W
 - Leakage Power = 6.73e-10 W
