@@ -149,23 +149,24 @@ make mount
 package require openlane 0.9
 prep -design openlane/pes_bcdbin -tag run-1
 ```
-file:///home/nithin/Pictures/Screenshots/Screenshot%20from%202023-11-04%2021-22-45.png
-file:///home/nithin/Pictures/Screenshots/Screenshot%20from%202023-11-04%2021-21-31.png
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/77d4d5c4-0da9-4310-8577-fe33b06d2bd3)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/660be4a2-469a-4f27-9192-307c081435da)
 
 **Synthesis**
 + Command to exectue
 ```
 run_synthesis
 ```
-![synthesis](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/ed688602-b730-48e1-9362-cfc5bd6b539d)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/1fcfe456-cbbb-4eb8-a64f-d3e2d96077ff)
 
 
 **Floorplan**
 + Command to exectue
 ```
 run_floorplan
-```
-![flr](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/34ca151f-a53e-4fd1-b06e-6a0d8180f657)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/6d5dae4f-93e2-4509-b99b-beb16e227cbf)
 
 
 **Note we need to use libs.tech file so we need to gitclone this https://github.com/hwiiiii/sky130A into pdks folder**
@@ -174,9 +175,11 @@ git clone https://github.com/hwiiiii/sky130A
 ```
 
 ```
-magic -T /home/mohankrishna/sky130A/sky130A/1lbs.tech/magic/sky130A. tech lef read ../../tmp/merged.nom.lef def read pes_bcdbin.def
+magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef def pes_smartlocksystem.def &
 ```
-![Screenshot from 2023-11-04 17-45-50](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/e660045c-4708-4c11-82b1-7d63b226db13)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/df302c32-6ff8-4aba-b417-32debcc10d12)
+
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/60b700f2-1902-422a-b99d-eb8d4c793847)
 
 
 
@@ -186,10 +189,11 @@ magic -T /home/mohankrishna/sky130A/sky130A/1lbs.tech/magic/sky130A. tech lef re
 run_placement
 ```
 ```
-magic -T /home/mohankrishna/sky130A/sky130A/1lbs.tech/magic/sky130A. tech lef read ../../tmp/merged.nom.lef def read pes_bcdbin.def
+magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef def read pes_smartlocksystem.def &
 ```
-![Screenshot from 2023-11-04 17-48-48](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/0decb9b3-3415-4db1-a4f8-222c13fdb667)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/c3ce9d0a-d171-4171-af54-d53fedd71482)
 
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/ce601d07-4193-48e0-a2f5-5e21e998ea8e)
 
 
 **CTS**
@@ -197,7 +201,7 @@ magic -T /home/mohankrishna/sky130A/sky130A/1lbs.tech/magic/sky130A. tech lef re
 ```
 run_cts
 ```
-![cts](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/853305e9-2e11-469f-a594-a7c2bd60e8d7)
+![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/eebd43d3-41c4-4acb-8833-d7e69e050d08)
 
 
 **Routing**
@@ -210,7 +214,7 @@ run_routing
 
 
 ```
-magic -T /home/mohankrishna/sky130A/sky130A/1lbs.tech/magic/sky130A. tech lef read ../../tmp/merged.nom.lef def read pes_bcdbin.def
+magic -T /home/nithin/Downloads/sky130A/sky130A. tech lef read ../../tmp/merged.nom.lef def pes_smartlocksystem.def &
 ```
 ![Screenshot from 2023-11-04 17-50-06](https://github.com/Tech-mohankrishna/pes_bcdbin/assets/57735263/b83e6c10-1194-43f3-80f4-6a1bb7ce38d9)
 
