@@ -165,14 +165,14 @@ run_synthesis
 + Command to exectue
 ```
 run_floorplan
-
+```
 ![image](https://github.com/Gowda07/pes_smartlocksystem/assets/142581040/539c7666-8523-44a2-9913-e81b9a652838)
 
 
 **Note we need to use libs.tech file so we need to gitclone this https://github.com/hwiiiii/sky130A into pdks folder**
-```
+
 git clone https://github.com/hwiiiii/sky130A
-```
+
 
 ```
 magic -T /home/nithin/Downloads/sky130A. tech lef read ../../tmp/merged.nom.lef def pes_smartlocksystem.def &
